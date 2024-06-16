@@ -1,0 +1,100 @@
+/* 引入自定義字形 */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/font.woff2') format('woff2'),
+       url('fonts/font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 全局樣式 */
+body {
+  font-family: 'CustomFont', sans-serif; /* 使用自定義字形 */
+  background-image: url('images/background.png'); /* 背景圖片 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff; /* 文字顏色 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 標頭樣式 */
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+/* 動畫區域樣式 */
+.animation {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.animation h2 {
+  font-size: 5rem;
+}
+
+.animated-text {
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.animated-text span {
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-arrow {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #243759; /* 按鈕背景顏色 */
+  color: #ffffff; /* 按鈕文字顏色 */
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  background-color: #1a2736; /* 按鈕懸停時的背景顏色 */
+}
+
+/* 底部區域樣式 */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.next-page-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #243759; /* 按鈕背景顏色 */
+  color: #ffffff; /* 按鈕文字顏色 */
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-page-button:hover {
+  background-color: #1a2736; /* 按鈕懸停時的背景顏色 */
+}
+
